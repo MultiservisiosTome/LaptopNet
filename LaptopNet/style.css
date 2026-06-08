@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f5f7fb;
+  color: #1e293b;
+}
+
+header {
+  background: #0f172a;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: auto;
+  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+}
+
+.logo span {
+  color: #38bdf8;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: #38bdf8;
+}
+
+.hero {
+  min-height: 90vh;
+  background: linear-gradient(135deg, #0f172a, #1e40af);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 45px;
+  max-width: 850px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 25px;
+  background: #38bdf8;
+  color: #0f172a;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.btn-wsp {
+  background: #22c55e;
+  color: white;
+}
+
+.section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 38px;
+    color: #38bdf8;
+    margin: 30px 0;
+}
+
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.card {
+  background: #0f172a;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card h3 {
+  color: #38bdf8;
+  margin-bottom: 15px;
+}
+.card img {
+    width: 220px;
+    height: 140px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+.card p {
+    color: #e2e8f0;
+}
+
+.precio {
+    color: #4ade80;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.dark {
+  background: #0f172a;
+  color: #e2e8f0;
+  max-width: 100%;
+}
+
+.dark .card {
+  color: white;
+}
+
+.about {
+  max-width: 800px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.contacto p {
+  font-size: 18px;
+  margin: 10px;
+}
+
+.whatsapp {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  background: #22c55e;
+  color: white;
+  font-size: 28px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+footer {
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .menu {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+.hero-laptop img{
+    animation: flotar 3s ease-in-out infinite;
+}
+
+@keyframes flotar{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.social{
+    margin-top: 25px;
+}
+
+.social a{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.social a:hover{
+    color: #38bdf8;
+}
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+.card{
+    background:#111827;
+    border-radius:20px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 0 20px rgba(0,0,0,.3);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:220%;
+    max-width:220px;
+    height:140;
+    margin-bottom:15px;
+}
+
+.card h3{
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+.precio{
+    color:#4ade80;
+    font-size:24px;
+    font-weight:bold;
+    margin:15px 0;
+}
+.card p{
+    color: #ffffff;
+    font-size: 16px;
+    opacity: 1;
+}
+
+.card{
+    background: #0f172a;
+    border: 1px solid #38bdf8;
+}
+
+.card h3{
+    color: #38bdf8;
+}
+
+.precio{
+    color: #22c55e;
+    font-size: 26px;
+    font-weight: bold;
+}
+footer{
+    background:#020617;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:50px;
+    border-top:1px solid #38bdf8;
+}
+
+footer p{
+    margin:10px 0;
+}
