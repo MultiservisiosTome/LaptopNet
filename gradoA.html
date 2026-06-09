@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laptops Grado A | LaptopNet.hn</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#0a1128;
+    color:white;
+}
+
+header{
+    background:#000814;
+    padding:20px;
+    text-align:center;
+}
+
+header h1{
+    color:#38bdf8;
+}
+
+.catalogo{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+    padding:40px;
+}
+
+.card{
+    background:#07132f;
+    border:2px solid #38bdf8;
+    border-radius:20px;
+    padding:20px;
+    text-align:center;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    max-width:250px;
+    height:200px;
+    object-fit:contain;
+}
+
+.card h3{
+    color:#38bdf8;
+}
+
+.precio{
+    font-size:24px;
+    font-weight:bold;
+    color:#4ade80;
+}
+
+.btn{
+    display:inline-block;
+    background:#38bdf8;
+    color:white;
+    padding:12px 25px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+.btn:hover{
+    background:#0ea5e9;
+}
+
+.volver{
+    text-align:center;
+    margin:30px;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <h1>💻 Catálogo de Laptops Grado A</h1>
+    <p>Equipos importados en excelente estado y alto rendimiento.</p>
+</header>
+
+<section class="catalogo">
+
+    <div class="card">
+        <img src="Latitude.png" alt="Dell Latitude">
+        <h3>Dell Latitude 5420</h3>
+        <p>Intel Core i5 11va Generación</p>
+        <p>16GB RAM | 512GB SSD</p>
+        <p class="precio">L 9,500</p>
+
+        <a href="https://wa.me/50497672263?text=Hola,%20me%20interesa%20la%20Dell%20Latitude%205420"
+        class="btn">
+        Consultar
+        </a>
+    </div>
+
+    <div class="card">
+        <img src="Precision.png" alt="Dell Precision">
+        <h3>Dell Precision</h3>
+        <p>Intel Core i7</p>
+        <p>16GB RAM | 512GB SSD</p>
+        <p class="precio">L 12,500</p>
+
+        <a href="https://wa.me/50497672263?text=Hola,%20me%20interesa%20la%20Dell%20Precision"
+        class="btn">
+        Consultar
+        </a>
+    </div>
+
+    <div class="card">
+        <img src="Optiplex.png" alt="Dell OptiPlex">
+        <h3>Dell OptiPlex</h3>
+        <p>Equipo empresarial</p>
+        <p>8GB RAM | 256GB SSD</p>
+        <p class="precio">L 6,500</p>
+
+        <a href="https://wa.me/50497672263?text=Hola,%20me%20interesa%20la%20Dell%20OptiPlex"
+        class="btn">
+        Consultar
+        </a>
+    </div>
+
+</section>
+
+<div class="volver">
+    <a href="index.html" class="btn">🏠 Volver al inicio</a>
+</div>
+
+</body>
+</html>

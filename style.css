@@ -257,10 +257,10 @@ footer {
 }
 
 .card img{
-    width:220%;
+    width:100%;
     max-width:220px;
     height:140;
-    margin-bottom:15px;
+    margin-bottom:10px;
 }
 
 .card h3{
@@ -357,4 +357,13 @@ footer p{
 .hero-laptop img{
     width: 520px;
     animation: flotar 3s ease-in-out infinite;
+}
+.volver{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.volver .btn{
+    display: inline-block;
 }
