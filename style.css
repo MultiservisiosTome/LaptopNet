@@ -54,16 +54,14 @@ header {
   min-height: 90vh;
   background: linear-gradient(135deg, #0f172a, #1e40af);
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
-  padding: 40px;
+  padding: 80px;
   color: white;
 }
 
 .hero-text h1 {
-  font-size: 45px;
-  max-width: 850px;
+  font-size: 48px;
   margin-bottom: 20px;
 }
 
@@ -207,7 +205,10 @@ footer {
   }
 }
 .hero-laptop img{
+    width: 500px;
+    margin-top: -180px;
     animation: flotar 3s ease-in-out infinite;
+
 }
 
 @keyframes flotar{
@@ -304,4 +305,56 @@ footer{
 
 footer p{
     margin:10px 0;
+}
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 20px;
+    background:#00aaff;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+.btn-whatsapp{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 20px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn-whatsapp:hover{
+    background:#1ebe5d;
+}
+.repuestos-img{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-bottom:15px;
+}
+
+.repuestos-img img{
+    width:60px;
+    height:60px;
+    object-fit:contain;
+}
+.hero-laptop{
+  width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-laptop img{
+    width: 520px;
+    animation: flotar 3s ease-in-out infinite;
 }
